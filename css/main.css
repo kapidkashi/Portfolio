@@ -66,6 +66,7 @@ nav ul li a:hover{
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;
+    color: 	#808080;
 
 }
 span{
@@ -131,6 +132,14 @@ span{
     letter-spacing: 3px;
 }
 /**About**/
+.about-heading {
+    width: 500px;
+    position: absolute;
+    left: 12%;
+    top: 20%;
+    transform:translate(-18%,-50%);
+    color: #808080;    
+}
 #about{
 
  
@@ -141,8 +150,12 @@ span{
     justify-content: space-between;
     padding: 50px 10% 0px 5%;
     position: relative;
+    background-color: 	#292929;
 }
-
+.about-header{
+    left: 50;
+    color: #ffa31a;
+}
 .container-img{
    width: 30%;
    overflow: hidden;
@@ -177,8 +190,69 @@ span{
     text-align: left;
     color: #3f3f3f;
 }
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
 
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ffa31a;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #ffa31a;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
 /**prog skill**/
+#prog-skills{
+   padding-top: 10%;
+    background-color: 	#292929;
+}
+#nonp-skill{
+    padding-top: 10%;
+     background-color: 	#292929;
+ }
+.skill-heading{
+    width: 500px;
+    position: relative;
+    left: 12%;
+    top: 20%;
+    transform:translate(-18%,-50%);
+    color: #808080;    
+}
 .header{
     text-align: center;
     color: #ffa31a;
